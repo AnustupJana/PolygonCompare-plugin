@@ -1,0 +1,47 @@
+# This file contains metadata for your plugin.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=Polygon Compare
+qgisMinimumVersion=3.0
+description=Compares two polygon layers to find added, deleted and modified polygons by unique ID and geometry
+version=0.1
+author=Anustup Jana
+email=anustupjana21@gmail.com
+
+about=The Polygon Compare plugin is a robust tool for QGIS users to analyze changes between two vector polygon layers. By comparing a unique ID field and polygon geometries, it identifies added polygons (new features in the second layer), deleted polygons (features absent in the second layer), and modified polygons (features with the same ID but changed geometry). The plugin outputs three separate layers for easy visualization and analysis, making it invaluable for tasks like land use change detection, parcel compare, footprint compare, urban planning, environmental monitoring, or any GIS workflow tracking spatial updates. With error handling for invalid geometries and detailed processing feedback, Polygon Compare ensures reliable results. Simplify your change detection tasks with this intuitive and efficient plugin, designed to enhance spatial data analysis in QGIS.
+
+tracker=https://github.com/AnustupJana/PolygonCompare-plugin/issues
+repository=https://github.com/AnustupJana/PolygonCompare-plugin
+# End of mandatory metadata
+
+# Recommended items:
+
+hasProcessingProvider=no
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=polygon, processing, attribute, analysis, geometry, layers, shapefile, vector, Polygon Comparison, Change Detection, GIS Analysis, Land Use Change, Urban Planning
+
+homepage=https://github.com/AnustupJana/PolygonCompare-plugin/#readme
+category=Plugins
+icon=icon.png
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
+# Since QGIS 3.8, a comma separated list of plugins to be installed
+# (or upgraded) can be specified.
+# Check the documentation for more information.
+# plugin_dependencies=
+
+Category of the plugin: Raster, Vector, Database or Web
+# category=Vector
+
+# If the plugin can run on QGIS Server.
+server=False
+
