@@ -21,10 +21,15 @@ This plugin is designed for GIS users who need to track changes between two vers
 - **Dependencies**: None (uses QGIS core and processing libraries)
 
 ## Installation
-1. **From QGIS Plugin Repository** (once published):
+1. **From QGIS Plugin Repository**:
    - In QGIS, go to `Plugins > Manage and Install Plugins`.
+
+![Diagram of the System](https://github.com/AnustupJana/PolygonCompare-plugin/blob/main/doc/1st_Plugin.png?raw=true)
    - Search for "Polygon Compare" in the `All` tab.
    - Click `Install Plugin`.
+     
+![Diagram of the System](https://github.com/AnustupJana/PolygonCompare-plugin/blob/main/doc/2nd_Install.png?raw=true)
+     
 
 2. **From ZIP File**:
    - Download the plugin ZIP file from the [GitHub Releases](https://github.com/AnustupJana/polygon_compare/releases) page.
@@ -42,14 +47,16 @@ This plugin is designed for GIS users who need to track changes between two vers
      - macOS: `~/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins`
    - In QGIS, go to `Plugins > Manage and Install Plugins`, enable "Polygon Compare".
 
-4. Restart QGIS to load the plugin.
 
 ## Usage
 1. **Open the Plugin**:
    - After installation, find the plugin in the QGIS toolbar or under `Plugins > Polygon Compare > Compare Polygon Layers`.
+
+![Diagram of the System](https://github.com/AnustupJana/PolygonCompare-plugin/blob/main/doc/3rd_Show_Plugin.png?raw=true)
+
    - Alternatively, open the Processing Toolbox (Ctrl+Alt+T) and locate `Vector Analysis > Compare Polygon Layers`.
 
-2. **Configure Parameters**:
+1. **Configure Parameters**:
    - **Old Polygon Layer**: Select the original polygon layer.
    - **New Polygon Layer**: Select the updated polygon layer.
    - **Unique ID Field**: Choose a field (e.g., "id") that uniquely identifies features in both layers.
@@ -58,14 +65,20 @@ This plugin is designed for GIS users who need to track changes between two vers
      - **Added Polygons**: Destination for new polygons in the new layer.
      - **Deleted Polygons**: Destination for polygons missing from the new layer.
 
-3. **Run the Algorithm**:
+2. **Run the Algorithm**:
    - Click `Run` in the dialog.
    - The plugin will process the layers and produce three output layers, which are automatically added to your QGIS project.
    - Progress and feedback (e.g., counts of added, deleted, and modified polygons) are shown in the Processing Log.
+  
+![Diagram of the System](https://github.com/AnustupJana/PolygonCompare-plugin/blob/main/doc/4th_Run_Plugin.png?raw=true)
 
-4. **Review Outputs**:
+![Diagram of the System](https://github.com/AnustupJana/PolygonCompare-plugin/blob/main/doc/5th_Get_Output.png?raw=true)
+
+3. **Review Outputs**:
    - Check the output layers in the QGIS Layers panel.
    - Use QGIS tools to analyze or visualize the results (e.g., style the layers to highlight changes).
+
+![Diagram of the System](https://github.com/AnustupJana/PolygonCompare-plugin/blob/main/doc/6th_Check_Output.png?raw=true)
 
 ## Example
 - **Input**:
