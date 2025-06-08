@@ -32,14 +32,14 @@ This plugin is designed for GIS users who need to track changes between two vers
      
 
 2. **From ZIP File**:
-   - Download the plugin ZIP file from the [GitHub Releases](https://github.com/AnustupJana/polygon_compare/releases) page.
+   - Download the plugin ZIP file from the [GitHub Releases](https://github.com/AnustupJana/PolygonCompare-plugin/archive/refs/heads/main.zip) page.
    - In QGIS, go to `Plugins > Manage and Install Plugins > Install from ZIP`.
    - Select the downloaded ZIP file and click `Install Plugin`.
 
 3. **From Source (for developers)**:
    - Clone or download this repository:
      ```bash
-     git clone https://github.com/AnustupJana/polygon_compare.git
+     git clone https://github.com/AnustupJana/PolygonCompare-plugin.git
      ```
    - Copy the `polygon_compare` folder to your QGIS plugins directory:
      - Windows: `C:\Users\[YourUsername]\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins`
@@ -90,45 +90,8 @@ This plugin is designed for GIS users who need to track changes between two vers
   - `Added Polygons`: New parcels added in 2025.
   - `Deleted Polygons`: Parcels removed since 2024.
 
-## Troubleshooting
-- **Error: "ID field not found"**:
-  - Ensure both input layers have the specified unique ID field.
-- **Error: "Layer is not a polygon layer"**:
-  - Verify that both input layers are vector polygon layers.
-- **Icon not displaying**:
-  - Ensure `icon.png` is present in the plugin directory.
-- **Plugin not appearing**:
-  - Check the QGIS plugins directory and reload the plugin via `Plugins > Manage and Install Plugins`.
-- For further issues, check the QGIS Python Console (Ctrl+Alt+P) or Log Messages panel (View > Panels > Log Messages).
-
-## Development
-To contribute or modify the plugin:
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/polygon_compare.git
-   ```
-2. Install dependencies (if any) and ensure `pyrcc5` is available for resource compilation:
-   ```bash
-   pyrcc5 -o resources.py resources.qrc
-   ```
-3. Test changes in QGIS by copying the `polygon_compare` folder to the plugins directory.
-4. Submit pull requests or report issues on the [GitHub Issues](https://github.com/AnustupJana/polygon_compare/issues) page.
-
-## Metadata
-- **Plugin Name**: Polygon Compare
-- **Version**: 0.1
-- **Author**: Anustup Jana
-- **Email**: anustupjana21@gmail.com
-- **License**: GNU General Public License v2.0 or later
-- **Repository**: [GitHub](https://github.com/AnustupJana/polygon_compare)
-- **QGIS Minimum Version**: 3.0
-
-## Acknowledgments
-- Built using the QGIS Plugin Builder.
-- Powered by the QGIS Processing Framework.
-
 ## Contact
-For questions, bug reports, or feature requests, contact Anustup Jana at [anustupjana21@gmail.com](mailto:anustupjana21@gmail.com) or open an issue on GitHub.
+For questions, bug reports, or feature requests, contact Anustup Jana at [anustupjana21@gmail.com](mailto:anustupjana21@gmail.com) or open an [issue](https://github.com/AnustupJana/PolygonCompare-plugin/issues) on GitHub.
 
 ---
 **Copyright (C) 2025 Anustup Jana**
