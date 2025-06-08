@@ -1,4 +1,5 @@
-# Polygon Compare QGIS Plugin
+# Polygon Compare QGIS Plugin 
+![Diagram of the System](https://github.com/AnustupJana/PolygonCompare-plugin/blob/main/icon.png?raw=true)
 
 ## Description
 **Polygon Compare** is a QGIS plugin that compares two vector polygon layers to identify added, deleted, and modified polygons based on a unique ID field and their geometry. It produces three output layers:
